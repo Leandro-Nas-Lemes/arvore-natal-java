@@ -9,7 +9,7 @@ public class Main {
         while (sc.hasNextInt()) {
             int N = sc.nextInt();
 
-
+            // folhas
             for (int estrelas = 1; estrelas <= N; estrelas += 2) {
 
                 int espacos = (N - estrelas) / 2;
@@ -25,12 +25,14 @@ public class Main {
                 System.out.println();
             }
 
+            // tronco 1
             int espacos = (N - 1) / 2;
             for (int i = 0; i < espacos; i++) {
                 System.out.print(" ");
             }
             System.out.println("*");
 
+            // tronco 3
             espacos = (N - 3) / 2;
             for (int i = 0; i < espacos; i++) {
                 System.out.print(" ");
@@ -41,8 +43,3 @@ public class Main {
         }
     }
 }
-
-
-// Programa: Árvore de Natal
-// Linguagem: Java
-// Autor: Leandro
